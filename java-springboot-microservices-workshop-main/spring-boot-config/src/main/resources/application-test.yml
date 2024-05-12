@@ -1,0 +1,15 @@
+server:
+  port: 7004
+my:
+  greeting: Hello
+
+db:
+  connection: test-connection
+  host: host
+  port: port
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

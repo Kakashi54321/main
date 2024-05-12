@@ -1,0 +1,7 @@
+my:
+  greeting: Hello
+
+db:
+  connection: connection from config server
+  host: host
+  port: portt
