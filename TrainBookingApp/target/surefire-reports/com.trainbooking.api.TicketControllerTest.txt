@@ -1,0 +1,37 @@
+-------------------------------------------------------------------------------
+Test set: com.trainbooking.api.TicketControllerTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 6.874 s <<< FAILURE! -- in com.trainbooking.api.TicketControllerTest
+com.trainbooking.api.TicketControllerTest.testGetUsersBySection -- Time elapsed: 0.793 s <<< FAILURE!
+java.lang.AssertionError: No value at JSON path "$[0].from"
+	at org.springframework.test.util.JsonPathExpectationsHelper.evaluateJsonPath(JsonPathExpectationsHelper.java:302)
+	at org.springframework.test.util.JsonPathExpectationsHelper.assertValue(JsonPathExpectationsHelper.java:99)
+	at org.springframework.test.web.servlet.result.JsonPathResultMatchers.lambda$value$2(JsonPathResultMatchers.java:111)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:214)
+	at com.trainbooking.api.TicketControllerTest.testGetUsersBySection(TicketControllerTest.java:80)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+Caused by: com.jayway.jsonpath.PathNotFoundException: No results for path: $[0]['from']
+
+com.trainbooking.api.TicketControllerTest.testGetReceipt -- Time elapsed: 0.017 s <<< FAILURE!
+java.lang.AssertionError: No value at JSON path "$.from"
+	at org.springframework.test.util.JsonPathExpectationsHelper.evaluateJsonPath(JsonPathExpectationsHelper.java:302)
+	at org.springframework.test.util.JsonPathExpectationsHelper.assertValue(JsonPathExpectationsHelper.java:99)
+	at org.springframework.test.web.servlet.result.JsonPathResultMatchers.lambda$value$2(JsonPathResultMatchers.java:111)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:214)
+	at com.trainbooking.api.TicketControllerTest.testGetReceipt(TicketControllerTest.java:66)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+Caused by: java.lang.IllegalArgumentException: root can not be null
+	at com.jayway.jsonpath.internal.Utils.notNull(Utils.java:315)
+	at com.jayway.jsonpath.internal.path.EvaluationContextImpl.<init>(EvaluationContextImpl.java:61)
+	at com.jayway.jsonpath.internal.path.CompiledPath.evaluate(CompiledPath.java:96)
+	at com.jayway.jsonpath.internal.path.CompiledPath.evaluate(CompiledPath.java:107)
+	at com.jayway.jsonpath.JsonPath.read(JsonPath.java:191)
+	at com.jayway.jsonpath.JsonPath.read(JsonPath.java:393)
+	at com.jayway.jsonpath.JsonPath.read(JsonPath.java:377)
+	at org.springframework.test.util.JsonPathExpectationsHelper.evaluateJsonPath(JsonPathExpectationsHelper.java:299)
+	... 7 more
+

@@ -1,0 +1,8 @@
+com\trainbooking\service\TicketServiceImpl.class
+com\trainbooking\model\User.class
+com\trainbooking\repository\TicketRepository.class
+com\trainbooking\repository\InMemoryTicketRepository.class
+com\trainbooking\api\TicketController.class
+com\trainbooking\model\Ticket.class
+com\trainbooking\service\TicketService.class
+com\trainbooking\TrainBookingAppApplication.class
